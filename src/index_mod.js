@@ -51,7 +51,8 @@ const fileName="slider_rail.glb";
 
 
 ImportModel.importMeshModel(meshName,rootURLPath,fileName,scene);
-const mesh = scene.getMeshByName("Gear");
+//const mesh = scene.getMeshByName("Gear");
+const mesh = scene.rootNodes[0];
 Effects.add(mesh,scene);
 
 
