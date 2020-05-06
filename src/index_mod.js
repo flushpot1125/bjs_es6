@@ -15,13 +15,14 @@ import {
 } from "@babylonjs/core/Lights/hemisphericLight";
 
 // Import model (added by Limes)
-import {ModelImport} from './ModelImport.js';
+import {ImportModel} from './ImportModel.js';
 
 // Get the canvas element from the DOM.
 const canvas = document.getElementById("renderCanvas");
 
 // Associate a Babylon Engine to it.
 const engine = new Engine(canvas);
+
 
 // Create our first scene.
 var scene = new Scene(engine);
@@ -41,13 +42,14 @@ var light = new HemisphericLight("light1", new Vector3(0, 1, 0), scene);
 // Default intensity is 1. Let's dim the light a small amount
 light.intensity = 0.7;
 
-
-const meshName ="sword";
+const meshName ="slider";
 const rootURLPath ="../assets/";
-const fileName="Sting-Sword.babylon";
+const fileName="slider_rail.glb";
 
 
-ModelImport.importBabylon(meshName,rootURLPath,fileName,scene);
+ImportModel.importMeshModel(meshName,rootURLPath,fileName,scene);
+
+
 
 // Render every frame
 engine.runRenderLoop(() => {
