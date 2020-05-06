@@ -17,6 +17,9 @@ import {
 // Import model (added by Limes)
 import {ImportModel} from './ImportModel.js';
 
+// GlowLayer  (added by Limes)
+import {Effects} from './Effects';
+
 // Get the canvas element from the DOM.
 const canvas = document.getElementById("renderCanvas");
 
@@ -48,7 +51,8 @@ const fileName="slider_rail.glb";
 
 
 ImportModel.importMeshModel(meshName,rootURLPath,fileName,scene);
-
+const mesh = scene.getMeshByName("Gear");
+Effects.add(mesh,scene);
 
 
 // Render every frame
