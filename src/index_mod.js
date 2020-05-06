@@ -28,7 +28,7 @@ const engine = new Engine(canvas);
 var scene = new Scene(engine);
 
 // This creates and positions a free camera (non-mesh)
-var camera = new FreeCamera("camera1", new Vector3(0, 5, -10), scene);
+var camera = new FreeCamera("camera1", new Vector3(15, 15, 15), scene);
 
 // This targets the camera to scene origin
 camera.setTarget(Vector3.Zero());
@@ -42,7 +42,7 @@ var light = new HemisphericLight("light1", new Vector3(0, 1, 0), scene);
 // Default intensity is 1. Let's dim the light a small amount
 light.intensity = 0.7;
 
-const meshName ="slider";
+const meshName ="";
 const rootURLPath ="../assets/";
 const fileName="slider_rail.glb";
 

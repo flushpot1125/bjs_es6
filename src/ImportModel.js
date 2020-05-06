@@ -1,5 +1,7 @@
 
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
+//import {} from "@babylonjs/loaders/glTF/glTFFileLoader";
+import {} from "@babylonjs/loaders/glTF/2.0/glTFLoader";
 
 
 
@@ -13,7 +15,7 @@ const ImportModel ={
      * @param {*} scene 
      */
     importMeshModel: function(meshName,rootURLPath,sceneFilename,scene){
-        SceneLoader.ImportMeshAsync(meshName, rootURLPath, sceneFilename, scene).then((result)=> {
+        SceneLoader.ImportMesh(meshName, rootURLPath, sceneFilename, scene,function(result){
 
         });
     },
