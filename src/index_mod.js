@@ -13,16 +13,6 @@ import {
 import {
     HemisphericLight
 } from "@babylonjs/core/Lights/hemisphericLight";
-import {
-    Mesh
-} from "@babylonjs/core/Meshes/mesh";
-
-import {
-    GridMaterial
-} from "@babylonjs/materials/grid";
-
-// Required side effects to populate the Create methods on the mesh class. Without this, the bundle would be smaller but the createXXX methods from mesh would not be accessible.
-import "@babylonjs/core/Meshes/meshBuilder";
 
 // Import model (added by Limes)
 import {ModelImport} from './ModelImport.js';

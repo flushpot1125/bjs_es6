@@ -1,7 +1,6 @@
 
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
 
-//const sceneLoader = new SceneLoader(); 
 
 
 const ModelImport ={

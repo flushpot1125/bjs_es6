@@ -12,7 +12,8 @@ const path = require('path');
 const outputPath = path.resolve(__dirname, './');//distではなくプロジェクトのトップに変更
 module.exports = {
     // バンドル（ひとまとめにする）するファイルを指定
-    entry: './src/testtest.js',
+    entry: './src/index_mod.js',//単一ファイルのとき
+    //entry:'./src/*',//複数ファイルのとき（要確認）
     output: {
         // バンドルしてmain.jsとして出力（これは実体として生成されないが、index.htmlなどで呼び出し記述が必要）
         filename: 'main.js',

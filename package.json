@@ -18,6 +18,7 @@
   "homepage": "https://github.com/flushpot1125/bjs_es6#readme",
   "devDependencies": {
     "@babylonjs/core": "^4.1.0",
+    "@babylonjs/loaders": "^4.1.0",
     "@babylonjs/materials": "^4.1.0",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
