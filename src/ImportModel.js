@@ -21,7 +21,7 @@ const ImportModel ={
     },
 
     // not work yet
-    importBabylonFormat: function(rootUrl,sceneFilename,engine){
+    importBabylonFormatModel: function(rootUrl,sceneFilename,engine){
         SceneLoader.Load(rootUrl,sceneFilename,engine);
 
     }
