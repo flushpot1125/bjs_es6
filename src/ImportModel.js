@@ -1,6 +1,6 @@
 
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
-//import {} from "@babylonjs/loaders/glTF/glTFFileLoader";
+
 import {} from "@babylonjs/loaders/glTF/2.0/glTFLoader";
 
 
